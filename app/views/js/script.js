@@ -1,4 +1,4 @@
-var URL_BASE="http://127.0.0.1/cimol/coordenacao";
+   var URL_BASE="http://127.0.0.1/cimol/coordenacao";
 $(document).ready(function(){
     
     $("#user-show").click(

@@ -47,7 +47,7 @@ class Main
 	 * o controller e a action (método).
 	 */
 	public function __construct () {
-		# Chama o método get_url)data, para obter os dados da url.
+		# Chama o método get_url_data, para obter os dados da url.
 		$this->get_url_data();
 		
 		#Verifica se o controller existe. Caso contrário, adiciona o

@@ -6,7 +6,7 @@ $mes=date("m");
 ?>
 <div id="header-moviment">
     <div class="input-group">
-        <a class="btn btn-primary" href="<?php echo URL_BASE ?>?page=moviments&action=add"> Add </a>
+        <a class="btn btn-primary" href="<?php echo URL_BASE ?>moviments/add"> Add </a>
     </div>
     <div class="input-group">
         <label class="input-group-text" for="inputGroupSelect01">Year</label>

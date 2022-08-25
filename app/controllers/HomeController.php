@@ -7,7 +7,7 @@
  * @since 0.1
  */
 class HomeController extends MainController
-{
+{ 
 
 	public function __construct(){
 		parent::__construct();
@@ -25,7 +25,7 @@ class HomeController extends MainController
 		
 		# Essa página não precisa de modelo (model)
 		
-		# Carrega os arquivos do view		
+		# Carrega os arquivos do view	pasta/arquivo	
 		$this->view->show('home/home', null);
 	
 		

@@ -1,4 +1,4 @@
-<?php if ( ! defined('PATH')) exit; ?>
+<?php if ( !defined('URL_BASE')) exit; ?>
 
 
 <div class="wrap">
@@ -15,7 +15,7 @@
 	<h2>Controller</h2>
 	<p>O responsável por receber todas as requisições do usuário. Seus métodos chamados actions são responsáveis por uma página, controlando qual model usar e qual view será mostrado ao usuário.</p>
 
-	<img src="<?php echo URL_BASE ?>/views/images/mvc1.jpg" style="width:50%; margin-left:25%"/>
+	<img src="<?php echo URL_BASE ?>/app/views/images/mvc1.jpg" style="width:50%; margin-left:25%"/>
 
 	<h2>Comunicação entre os módulos</h2>
 

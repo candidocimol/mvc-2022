@@ -2,7 +2,7 @@
 
 class MovimentsModel extends MainModel{ 
 
-    public function list($dateStart, $dateEnd){
+    public function list($dateStart=null, $dateEnd=null){
         $sql="SELECT * FROM moviment";
 
 		$retorno=$this->db->query($sql, null);
