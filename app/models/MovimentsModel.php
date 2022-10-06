@@ -51,6 +51,21 @@ class MovimentsModel extends MainModel{
         return $this->db->delete("moviment","id_moviment",$id);
     }
 
+    public function listSummary(){
+        $sql="SELECT distinct date, 
+        (SELECT sum(value) from moviment where type='input' and date=m.date) AS input,
+        (SELECT sum(value) from moviment where type='output' and date=m.date) AS output 
+        FROM moviment m";
+        $resultado;
+    	$retorno=$this->db->query($sql, null);
+		While($item=$retorno->fetch(PDO::FETCH_ASSOC)){
+			$resultado[]=$item;
+		}
+		return $resultado;
+    }
+
+
+
 
 
 }

@@ -49,7 +49,7 @@ define( 'DB_CHARSET', 'utf8' );
 
 /*-------------------------*/
 # Se você estiver desenvolvendo, modifique o valor para true
-define( 'DEBUG', true );
+define( 'DEBUG ', true );
 
 
 ?>

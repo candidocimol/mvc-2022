@@ -23,12 +23,10 @@ class HomeController extends MainController
 		# Título da página
 		$this->title = 'Home';
 		
-		# Essa página não precisa de modelo (model)
-		
+		$model=$this->load_model("Moviments");
+		$summary=$model->listSummary();
 		# Carrega os arquivos do view	pasta/arquivo	
-		$this->view->show('home/home', null);
-	
-		
-    } // index
-	
+		$this->view->show('home/dashboard',$summary);
+	} // index
+
 } // class HomeController

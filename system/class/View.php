@@ -64,10 +64,9 @@ class View{
      */
     public function show($content,$data){
         
-        if(empty($this->template)){
+        /*if(empty($this->template)){
            $this->template='default'; 
-        }
-      
+        }*/
         include DIR_TEMPLATE."/index.php";
 
     }
