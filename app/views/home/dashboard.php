@@ -1,9 +1,4 @@
-<?php
-    foreach($data AS $item){
-        $rows.="['{$item['date']}',{$item['input']} ,{$item['output']} ],";
-    }
-    
-?>
+
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
